@@ -77,7 +77,6 @@ func getDomain(url string) string {
 	return ""
 }
 
-func HealthHandler(w http.ResponseWriter, r *http.Request) {
-	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("Service is healthy"))
+func HealthHandler() string {
+	return "Service is healthy"
 }
